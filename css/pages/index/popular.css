@@ -1,0 +1,115 @@
+:root {
+    --product-item-padding-top: 40px;
+    --product-item-padding-left: 36px;
+    --line-width: 30px;
+}
+
+.popular {
+    padding: var(--section-padding) 0;
+}
+
+.popular .row-top {
+    position: relative;
+}
+
+.popular .row-top h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popular .row-top a {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #444240;
+}
+
+.popular .row-top a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+    background-color: #8B8371;
+    height: 1px;
+}
+
+.popular .product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.popular .product-list li {
+    position: relative;
+    width: 370px;
+    height: 467px;
+    padding-top: var(--product-item-padding-top);
+    padding-left: var(--product-item-padding-left);
+    border: 1px solid var(--font-color);
+    background-color: #fbfbfb;
+    transition-duration: 200ms;
+    transition-property: transform;
+}
+
+.popular .product-list li:hover {
+    transform: translateY(-5px);
+}
+
+.popular .product-list li .product-info {
+    position: absolute;
+    top: var(--product-item-padding-top);
+    left: var(--product-item-padding-left);
+}
+
+.popular .product-list li .product-info .product-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--font-color);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.popular .product-list li .product-info .product-price {
+    margin-top: 10px;
+    font-family: 'Prata', serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.popular .product-list img {
+    width: 313px;
+    height: 313px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.popular .product-list li .product-link {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: calc(84px - var(--product-item-padding-left));
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.popular .product-list li .product-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(var(--line-width) * -1 - 18px);
+    width: var(--line-width);
+    height: 1px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
+}

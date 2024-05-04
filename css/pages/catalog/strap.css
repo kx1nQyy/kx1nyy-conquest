@@ -1,0 +1,97 @@
+.range {
+    margin: var(--section-padding) 0;
+}
+
+.range .container .strap-header {
+    position: relative;
+}
+
+.range .container .strap-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.range .container .strap-header a {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #444240;
+}
+
+.range .container .strap-header a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+    background-color: #8B8371;
+    height: 1px;
+}
+
+.range .container .range-catalog {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.range .container .product-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.range .container .product-list .product-list-item:not(:first-child) {
+    margin-left: 42px;
+}
+
+.range .container .product-list .product-list-item {
+    border: 1px dashed;
+    background-color: #edede7;
+}
+
+.range .container .product-list .product-info h3 {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform:uppercase;
+    transform: translate(20px, 20px);
+}
+
+.range .container .product-list .product-info b {
+    position: absolute;
+    transform: translate(20px, 42px);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #636261;
+}
+
+.range .container .range-catalog button {
+    position: absolute;
+    margin-right: 40px;
+    height: 23px;
+    width: 23px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.range .container .range-catalog button:nth-child(1) {
+    transform: translate(-40px, 175px);
+    background-image: url(../../../img/icons/strap-arrow-left.svg);
+}
+
+.range .container .range-catalog button:nth-child(3) {
+    transform: translate(1199px, 175px);
+    background-image: url(../../../img/icons/straps-arrow-right.svg);
+}

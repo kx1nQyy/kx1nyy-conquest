@@ -1,0 +1,203 @@
+.catalog {
+    padding: calc(var(--section-padding) + var(--main-header-height)) 0 var(--section-padding);
+}
+
+.catalog .container .breadcrumb-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog .container .breadcrumb-list li:not(:first-child):before { 
+    content: '';
+    display: inline-block;
+    background-image: url(../../../img/icons/arrow-breadcrumb.svg);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 9px;
+    margin: 0 14px;
+}
+
+.catalog .breadcrumb-list a{
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B3B3B3;
+}
+
+.catalog .catalog-head {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.catalog .catalog-head h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+.catalog .catalog-head > div {
+    display: flex;
+    align-items: center;
+}
+
+.catalog .catalog-head div label {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    line-height: 152%;
+    user-select: none;
+    height: 20px;
+}
+
+.catalog .catalog-head div select {
+    position: relative;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    appearance: none;
+    width: 130px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog .catalog-head .select-wraper {
+    position: relative;
+}
+
+.catalog .catalog-head .select-wraper::before {
+    /* z-index: 1; */
+    position: absolute;
+    content: '';
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../../../img/icons/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.catalog .catalog-sorting {
+    display: block;
+    width: 230px;
+}
+
+.catalog .catalog-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.catalog .catalog-product .product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 836px;
+}
+
+.catalog .catalog-product .product-list .product-list-item {
+    position: relative;
+    width: 252px;
+    height: 300px;
+    border: 1px dashed #000;
+    margin-bottom: 40px;
+    background-color: #edede7;
+}
+
+.catalog .catalog-product .product-list .product-list-item:not(:nth-child(3n)) {
+    margin-right: 40px;
+}
+
+.catalog .catalog-product .product-list .product-list-item h3 {
+    position: absolute;
+    transform: translate(22px, 20px);
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 152%;
+    font-weight: 700;
+    color: #444240;
+}
+
+.catalog .catalog-product .product-list .product-list-item b {
+    position: absolute;
+    transform: translate(22px, 42px);
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    line-height: 152%;
+    font-weight: 400;
+    color: #636261;
+}
+
+.catalog .catalog-product .catalog-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    border-color: red;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list li a {
+    display: block;
+    color: #B6B6B6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list li.active a {
+    color: #000;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list li:not(:first-child) {
+    margin-left: 10px;
+    color: #B6B6B6;
+    text-decoration: none;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list .prev a {
+    background-image: url(../../../img/icons/arrow-left.svg);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list .prev li {
+    display: flex;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list .next a {
+    background-image: url(../../../img/icons/arrow-right.svg);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.catalog .catalog-product .catalog-main .pagination-list .next li {
+    display: flex;
+}

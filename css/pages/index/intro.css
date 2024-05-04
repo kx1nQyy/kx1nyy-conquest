@@ -1,0 +1,98 @@
+.intro {
+    padding: calc(var(--section-padding) + var(--main-header-height)) 0 var(--section-padding);
+    background-repeat: no-repeat;
+    background-color: #FDFDFB;
+}
+
+.intro .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../../../img/elipse-main.png);
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+    background-position: 20px 0px;
+}
+
+.intro .col:nth-child(1) {
+    padding-top: 233px;
+}
+
+.intro .col:nth-child(1) h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro .col:nth-child(1) h1 span:nth-child(1) {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.intro .col:nth-child(1) h1 span:nth-child(2) {
+    margin-top: 16px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.intro .col:nth-child(1) p {
+    margin-top: 39px;
+    width: 258px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 152%;
+}
+
+.intro .col:nth-child(1) .intro-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    width: 205px;
+    height: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #444240;
+}
+
+.intro .col:nth-child(2) {
+    position: relative;
+}
+
+.intro .col:nth-child(2) .price {
+    position: absolute;
+    top: 135px;
+    left: -79px;
+}
+
+.intro .col:nth-child(2) .price::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -65px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
+}
+
+.intro .col:nth-child(2) span {
+    position: absolute;
+    right: -85px;
+    bottom: 119px;
+}
+
+.intro .col:nth-child(2) span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -65px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
+}
