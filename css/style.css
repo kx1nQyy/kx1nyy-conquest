@@ -1,0 +1,48 @@
+:root {
+    --font-color: #1B1A17;
+    --main-footer-height: 275px;
+    --main-header-height: 85px;
+    --section-padding: 70px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFDFB;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/* Проверка сетки страницы */
+*:not(img, .small-picture, .product-list-item, .product-list),
+*::before,
+*::after {
+    /* border: 1px solid #000; */
+    /* box-sizing: border-box !important; */
+}
+
+.pagination-list, .pagination-list li {
+    /* border: 1px solid #000; */
+}
+
+.main-footer,
+.main-footer * {
+    /* border-color: #000; */
+}
