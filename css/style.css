@@ -3,10 +3,15 @@
     --main-footer-height: 275px;
     --main-header-height: 85px;
     --section-padding: 70px;
+    --scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,21 +33,4 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-}
-
-/* Проверка сетки страницы */
-*:not(img, .small-picture, .product-list-item, .product-list),
-*::before,
-*::after {
-    border: 1px solid #000;
-    box-sizing: border-box !important;
-}
-
-.pagination-list, .pagination-list li {
-    border: 1px solid #000;
-}
-
-.main-footer,
-.main-footer * {
-    border-color: #000;
 }

@@ -11,7 +11,7 @@
 .news .text-news {
     display: flex;
     flex-direction: column;
-    padding-top: 140px;
+    margin-top:  140px;
 }
 
 .news .text-news h3 {
@@ -26,19 +26,20 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 170%;
+    font-family: Roboto;
 }
 
 .news .text-news p a {
     color: black;
     font-weight: 500;
+    font-family: Roboto;
 }
 
 .news .text-news .social-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: 63px;
+    margin-top: 120px;
 }
 
 .news .text-news .social-list li:not(:first-child) {

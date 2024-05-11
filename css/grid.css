@@ -1,0 +1,15 @@
+*:not(img, .small-picture, .product-list-item, .product-list),
+*::before,
+*::after {
+    border: 1px solid #000;
+    box-sizing: border-box !important;
+}
+
+.pagination-list, .pagination-list li {
+    border: 1px solid #000;
+}
+
+.main-footer,
+.main-footer * {
+    border-color: #000;
+}
