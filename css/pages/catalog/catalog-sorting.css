@@ -32,6 +32,7 @@ input[type=reset] {
     text-transform: uppercase;
     border: 1px solid #E7E0CF;
     background-color: #fff;
+    cursor: pointer;
 }
 
 input[type=range] {
@@ -143,18 +144,20 @@ details:not(:first-child) span {
 }
 
 .catalog-product search form details summary::after {
-    content: url(../../../img/icons/+.svg);
+    content: url(../../../img/icons/plus.svg);
     position: absolute;
     top: 50%;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .catalog-product search form details[open] summary::after {
-    content: url(../../../img/icons/-.svg);
+    content: url(../../../img/icons/minus.svg);
+    cursor: pointer;
 }

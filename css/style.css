@@ -3,6 +3,7 @@
     --main-footer-height: 275px;
     --main-header-height: 85px;
     --section-padding: 70px;
+    --scroll-behavior: smooth;
 }
 
 * {

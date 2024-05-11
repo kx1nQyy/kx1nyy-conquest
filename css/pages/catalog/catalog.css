@@ -103,13 +103,19 @@
     width: 836px;
 }
 
+.catalog .catalog-product .catalog-main .product-list li:hover {
+    transform: translateY(-5px);
+}
+
 .catalog .catalog-product .product-list .product-list-item {
     position: relative;
     width: 252px;
     height: 300px;
-    border: 1px dashed #000;
+    border: 1px solid #000;
     margin-bottom: 40px;
     background-color: #edede7;
+    transition-duration: 200ms;
+    transition-property: transform;
 }
 
 .catalog .catalog-product .product-list .product-list-item:not(:nth-child(3n)) {
@@ -148,6 +154,8 @@
     align-items: center;
     border-color: red;
 }
+
+
 
 .catalog .catalog-product .catalog-main .pagination-list li {
     display: flex;
