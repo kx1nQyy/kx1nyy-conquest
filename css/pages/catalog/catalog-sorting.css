@@ -38,7 +38,6 @@ input[type=reset] {
 input[type=range] {
     margin-left: 10px;
 }
-
 details:not(:first-child) span {
     margin-left: 15px;
     font-family: 'Roboto', serif;
