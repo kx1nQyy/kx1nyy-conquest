@@ -33,21 +33,19 @@
 }
 
 .range .container .range-catalog {
-    display: flex;
-    flex-direction: row;
     margin-top: 50px;
     position: relative;
+    border-color: red;
 }
-
 
 .range .container .product-list {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     position: relative;
 }
 
-.range .container .product-list .product-list-item:not(:first-child) {
-    margin-left: 42px;
+.range .container .product-list a {
+    color: #444240;
 }
 
 .range .container .product-list li:hover {
@@ -84,23 +82,27 @@
 
 .range .container .range-catalog button {
     position: absolute;
-    margin-right: 40px;
     height: 23px;
     width: 23px;
+    top: 50%;
+    transform: translateY(-50%);
     border: none;
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    border: 1px solid red;
 }
 
 .range .container .range-catalog button:nth-child(1) {
-    transform: translate(-60px, 175px);
+    /* transform: translate(-60px, 175px); */
+    left: -38px;
     background-image: url(../../../img/icons/strap-arrow-left.svg);
 }
 
 .range .container .range-catalog button:nth-child(3) {
-    transform: translate(1199px, 175px);
+    /* transform: translate(1199px, 175px); */
+    right: -38px;
     background-image: url(../../../img/icons/straps-arrow-right.svg);
 }

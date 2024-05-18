@@ -89,6 +89,7 @@ details:not(:first-child) span {
     border: 1px solid #1B1A17;
     border-radius: 100%;
     background-color: #fff;
+    cursor: grab;
 }
 
 .catalog-product search form .custom-range .inner-line .handle:nth-child(2) {
@@ -102,6 +103,7 @@ details:not(:first-child) span {
     border: 1px solid #1B1A17;
     border-radius: 100%;
     background-color: #fff;
+    cursor: grab;
 }
 
 .catalog-product search form .custom-range .inner-line .handle span:nth-child(1) {
