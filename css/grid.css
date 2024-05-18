@@ -1,4 +1,4 @@
-*:not(img, .small-picture, .product-list-item, .product-list),
+*:not(img, .small-picture, .product-list-item, .product-list, .product-list-item a),
 *::before,
 *::after {
     border: 1px solid #000;
