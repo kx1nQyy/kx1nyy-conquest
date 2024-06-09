@@ -96,13 +96,11 @@
 }
 
 .range .container .range-catalog button:nth-child(1) {
-    /* transform: translate(-60px, 175px); */
     left: -38px;
     background-image: url(../../../img/icons/strap-arrow-left.svg);
 }
 
 .range .container .range-catalog button:nth-child(3) {
-    /* transform: translate(1199px, 175px); */
     right: -38px;
     background-image: url(../../../img/icons/straps-arrow-right.svg);
 }

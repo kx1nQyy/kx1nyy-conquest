@@ -11,6 +11,7 @@
 }
 
 .commodity .watch {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,22 +25,27 @@
 }
 
 .commodity .watch .watch-card button {
-    width: 23px;
+    position: absolute;
     height: 23px;
-    background: none;
-    align-self: center;
+    width: 23px;
+    top: 40%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     cursor: pointer;
-    border: none;
+    border: 1px solid red;
 }
 
 .commodity .watch .watch-card button:nth-child(1) {
+    left: -1px;
     background-image: url(../../../img/icons/strap-arrow-left.svg);
 }
 
     .commodity .watch .watch-card button:nth-last-child(1) {
+    right: -1px;    
     background-image: url(../../../img/icons/straps-arrow-right.svg);
 }
 
@@ -86,15 +92,24 @@
     color: #444240;
 }
 
-.commodity .watch-info img {
+.commodity .watch-info a {
+    position: relative;
+    width: 30px;
+    height: 40px;
+}
+
+.commodity .watch-info a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 30px;
     height: 26px;
-    position: center;
 }
 
 .commodity .watch-info b {
     display: inline-block;
-    padding-top: 20px;
+    margin-top: 20px;
     font-family: 'Roboto', serif;
     font-size: 24px;
     font-weight: 500;
@@ -113,6 +128,7 @@
     font-weight: 500;
     line-height: 152%;
     color: #444240;
+    margin-top: 50%;
 }
 
 .commodity .watch-info ul li:not(:first-child) {
@@ -148,7 +164,7 @@
 }
 
 .commodity .watch-info .text a {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-top: 54px;
