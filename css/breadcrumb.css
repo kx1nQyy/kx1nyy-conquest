@@ -1,0 +1,31 @@
+.container .breadcrumb-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .breadcrumb-list li:not(:first-child) {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 15px;
+}
+
+.container .breadcrumb-list li:not(:first-child):before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+    background-image: url(../../../img/icons/arrow-breadcrumb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.breadcrumb-list a {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B3B3B3;
+}
