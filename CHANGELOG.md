@@ -7,4 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- CQ-1:доработка страницы товара
+
+### Added
+
 - Started semver changelog
