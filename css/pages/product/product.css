@@ -59,6 +59,7 @@
     object-fit: cover;
     object-position: center;
     width: 125px;
+    cursor: pointer;
 }
 
 .commodity .mini-img .watch-picture:not(:first-child) {
