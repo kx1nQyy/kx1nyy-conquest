@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1160px;
     margin-top: 22px;
 }
 
@@ -59,6 +58,7 @@
     object-fit: cover;
     object-position: center;
     width: 125px;
+    cursor: pointer;
 }
 
 .commodity .mini-img .watch-picture:not(:first-child) {
