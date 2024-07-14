@@ -25,7 +25,6 @@ const bodyGrid = () => {
     } else {
         body.classList.add('grid');
     }
-    console.log()
 }
 
 clampedKeys(bodyGrid, [17, 32]);
