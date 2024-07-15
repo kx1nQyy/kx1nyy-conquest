@@ -1,15 +1,15 @@
-.product {
+.product-details {
     padding: calc(var(--section-padding) + var(--main-header-height)) 0 var(--section-padding);
 }
 
-.commodity {
+.product {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 22px;
 }
 
-.commodity .watch {
+.product .watch-picture {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,12 +18,12 @@
     border: 1px solid;
 }
 
-.commodity .watch .watch-card {
+.product .watch-picture .watch-card {
     display: flex;
     flex-direction: row;
 }
 
-.commodity .watch .watch-card button {
+.product .watch-picture .watch-card button {
     position: absolute;
     height: 23px;
     width: 23px;
@@ -38,52 +38,52 @@
     border: 1px solid red;
 }
 
-.commodity .watch .watch-card button:nth-child(1) {
+.product .watch-picture .watch-card button:nth-child(1) {
     left: -1px;
     background-image: url(../../../img/icons/strap-arrow-left.svg);
 }
 
-    .commodity .watch .watch-card button:nth-last-child(1) {
+.product .watch-picture .watch-card button:nth-last-child(1) {
     right: -1px;
     background-image: url(../../../img/icons/straps-arrow-right.svg);
 }
 
-.commodity .mini-img {
+.product .small-img-list {
     display: flex;
     width: 562px;
     margin-top: 22px;
 }
 
-.commodity .mini-img li {
+.product .small-img-list li {
     object-fit: cover;
     object-position: center;
     width: 125px;
     cursor: pointer;
 }
 
-.commodity .mini-img .watch-picture:not(:first-child) {
+.product .small-img-list .watch-picture:not(:first-child) {
     background-color: rgba(100, 100, 100, 0.15);
     margin-left: 20px;
 }
 
-.commodity .watch-info {
+.product .watch-info {
     width: 560px;
     border: 1px solid;
 }
 
-.commodity .watch-info .txt-margin {
+.product .watch-info .txt-margin {
     margin-left: 59px;
     margin-top: 49px;
 }
 
-.commodity .watch-info .name {
+.product .watch-info .name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-right: 40px;
 }
 
-.commodity .watch-info h2 {
+.product .watch-info h2 {
     font-family: 'Roboto', serif;
     font-size: 24px;
     font-weight: 600;
@@ -92,13 +92,13 @@
     color: #444240;
 }
 
-.commodity .watch-info a {
+.product .watch-info a {
     position: relative;
     width: 30px;
     height: 40px;
 }
 
-.commodity .watch-info a img {
+.product .watch-info a img {
     position: absolute;
     width: 30px;
     height: 26px;
@@ -107,7 +107,7 @@
     transform: translate(-50%, -50%);
 }
 
-.commodity .watch-info b {
+.product .watch-info b {
     display: inline-block;
     margin-top: 20px;
     font-family: 'Roboto', serif;
@@ -116,13 +116,13 @@
     color: #686868;
 }
 
-.commodity .watch-info ul {
+.product .watch-info ul {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
 }
 
-.commodity .watch-info ul li a {
+.product .watch-info ul li a {
     font-family: 'Roboto', serif;
     font-size: 18px;
     font-weight: 500;
@@ -130,15 +130,15 @@
     color: #444240;
 }
 
-.commodity .watch-info ul li:not(:first-child) {
+.product .watch-info ul li:not(:first-child) {
     margin-left: 20px;
 }
 
-.commodity .watch-info ul li a {
+.product .watch-info ul li a {
     position: relative;
 }
 
-.commodity .watch-info ul li.active a::before {
+.product .watch-info ul li.active a::before {
     content: "";
     position: absolute;
     bottom: -14px;
@@ -148,7 +148,7 @@
     transform: translateY(-50%);
 }
 
-.commodity .watch-info .text {
+.product .watch-info .text {
     font-family: 'Roboto', serif;
     font-size: 14px;
     width: 442px;
@@ -158,11 +158,11 @@
 
 }
 
-.commodity .watch-info .text p:not(:first-child) {
+.product .watch-info .text p:not(:first-child) {
     margin-top: 25px;
 }
 
-.commodity .watch-info .text a {
+.product .watch-info .text a {
     display: flex;
     justify-content: center;
     align-items: center;

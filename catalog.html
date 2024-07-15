@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -15,13 +15,11 @@
     <link rel="stylesheet" href="./css/main-footer.css">
     <link rel="stylesheet" href="./css/pages/catalog/catalog-sorting.css">
     <link rel="stylesheet" href="./css/pages/catalog/strap.css">
-    <link rel="stylesheet" href="./css/breadcrumb-list.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
     <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
 
-    <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -31,7 +29,7 @@
     <header class="main-header">
         <div class="container">
             <nav>
-                <a class="logo" href="/">
+                <a class="logo" href="./index.html">
                     <img
                         src="./img/logo.svg"
                         width="104"
@@ -99,8 +97,12 @@
         <section class="catalog">
             <div class="container">
                 <ul class="breadcrumb-list">
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li class="breadcrumb-list-item">
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-list-item">
+                        <a href="./catalog.html">Каталог</a>
+                    </li>
                     <li class="active"><a href="#">Мужские часы</a></li>
                 </ul>
 
@@ -109,7 +111,7 @@
                     <h2>Мужские часы</h2>
                     <div class="select-wrapper">
                         <label for="sort">Сортировать по:</label>
-                        <select name="" id="sort">
+                        <select id="sort" name="" >
                             <option value="">Популярности</option>
                             <option value="">Цене</option>
                             <option value="">Алфавиту</option>
@@ -222,7 +224,7 @@
                                         src="./img/watch/watch-2.png"
                                         width="252"
                                         height="300"
-                                        alt=""
+                                        alt="watch"
                                     >
                                 </a>
                             </li>
@@ -236,7 +238,7 @@
                                         src="./img/watch/watch-3.png"
                                         width="252"
                                         height="300"
-                                        alt=""
+                                        alt="watch"
                                     >
                                 </a>
                             </li>
@@ -265,7 +267,7 @@
                                         src="./img/watch/watch-5.png"
                                         width="252"
                                         height="300"
-                                        alt=""
+                                        alt="watch"
                                     >
                                 </a>
                             </li>
@@ -275,7 +277,7 @@
                                         src="./img/watch/promo-catalog.jpg"
                                         width="252"
                                         height="300"
-                                        alt=""
+                                        alt="watch"
                                     >
                                 </a>
                             </li>
@@ -304,7 +306,7 @@
                                         src="./img/watch/watches-7.png"
                                         width="252"
                                         height="300"
-                                        alt=""
+                                        alt="watch"
                                     >
                                 </a>
                             </li>
@@ -318,20 +320,32 @@
                                         src="./img/watch/watch-8.png"
                                         width="252"
                                         height="300"
-                                        alt=""
+                                        alt="watch"
                                     >
                                 </a>
                             </li>
                         </ul>
 
                         <ol class="pagination-list">
-                            <li class="prev"><a href="#"></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="active"><a href="#">3</a></li>
-                            <li>...</li>
-                            <li><a href="#">12</a></li>
-                            <li class="next"><a href="#"></a></li>
+                            <li class="pagination-list-item" class="prev">
+                                <a href="#"></a>
+                            </li>
+                            <li class="pagination-list-item">
+                                <a href="#">1</a>
+                            </li>
+                            <li class="pagination-list-item">
+                                <a href="#">2</a>
+                            </li>
+                            <li class="pagination-list-item" class="active">
+                                <a href="#">3</a>
+                            </li>
+                            <li class="pagination-list-item">...</li>
+                            <li class="pagination-list-item">
+                                <a href="#">12</a>
+                            </li>
+                            <li class="pagination-list-item" class="next">
+                                <a href="#"></a>
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -344,6 +358,7 @@
                     <h2>Ремешки</h2>
                     <a href="#">Смотреть всё</a>
                 </div>
+
                 <div class="range-catalog">
 
                     <button class="prev-btn"></button>
@@ -405,7 +420,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="col">
-                <a class="logo-footer" href="">
+                <a class="logo-footer" href="./index.html">
                     <img
                         src="./img/footer-logo.svg"
                         width="130"
@@ -445,7 +460,7 @@
                 <h3>Покупателям</h3>
                 <ul class="customer-list">
                     <li class="customer-list-item">
-                        <a href="#">Католог товаров</a>
+                        <a href="#">Каталог товаров</a>
                     </li>
                     <li class="customer-list-item">
                         <a href="#">Как заказать?</a>
