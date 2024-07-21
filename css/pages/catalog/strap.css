@@ -92,7 +92,6 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    border: 1px solid red;
 }
 
 .range .container .range-catalog button:nth-child(1) {
