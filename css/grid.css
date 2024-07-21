@@ -1,17 +1,16 @@
-.grid {
-        *:not(img, .small-picture, .product-list-item, .product-list, .product-list-item a),
-    *::before,
-    *::after {
-        border: 1px solid #000;
-        box-sizing: border-box !important;
-    }
+.grid,
+.grid *:not(img, .small-picture, .product-list-item, .product-list, .product-list-item a),
+.grid *::before,
+.grid *::after {
+    border: 1px solid #000;
+    box-sizing: border-box !important;
+}
 
-    .pagination-list, .pagination-list li {
-        border: 1px solid #000;
-    }
+.grid .pagination-list, .pagination-list li {
+    border: 1px solid #000;
+}
 
-    .main-footer,
-    .main-footer * {
-        border-color: #000;
-    }
+.grid .main-footer,
+.grid .main-footer * {
+    border-color: #000;
 }
