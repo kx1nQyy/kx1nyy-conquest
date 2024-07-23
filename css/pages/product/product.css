@@ -35,7 +35,6 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    border: 1px solid red;
 }
 
 .product .watch-picture .watch-card button:nth-child(1) {
